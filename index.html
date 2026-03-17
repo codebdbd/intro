@@ -12,7 +12,171 @@
 </head>
 <body>
     <div class="card">
-        <h1>Поддержать автора</h1>
+        <h1>Поддержать автора</h1><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support My Work</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9fafb;
+            --card-bg: #ffffff;
+            --text-main: #111827;
+            --text-muted: #6b7280;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --border: #e5e7eb;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background: var(--card-bg);
+            max-width: 450px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+
+        .icon-box {
+            width: 80px;
+            height: 80px;
+            background: #eff6ff;
+            border-radius: 20px;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+
+        h1 { font-size: 28px; font-weight: 800; margin: 0 0 12px; letter-spacing: -0.025em; }
+        p { color: var(--text-muted); line-height: 1.6; margin-bottom: 32px; }
+
+        .btn-primary {
+            display: block;
+            background: var(--accent);
+            color: white;
+            padding: 14px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
+            margin-bottom: 16px;
+        }
+
+        .btn-primary:hover { background: var(--accent-hover); }
+
+        .divider {
+            height: 1px;
+            background: var(--border);
+            margin: 32px 0;
+            position: relative;
+        }
+        .divider::after {
+            content: "or crypto";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: 0 12px;
+            color: var(--text-muted);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .crypto-item {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .label {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .address-bar {
+            background: #f3f4f6;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .address-bar:hover { border-color: var(--accent); background: #fff; }
+
+        .copy-icon { font-size: 12px; color: var(--accent); font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="icon-box">☕</div>
+    <h1>Support My Projects</h1>
+    <p>If you find my work useful and want to help me keep building, I would appreciate your support.</p>
+
+    <a href="YOUR_KOFI_OR_PAYPAL_LINK" class="btn-primary">Buy Me a Coffee</a>
+
+    <div class="divider"></div>
+
+    <div class="crypto-item">
+        <span class="label">Bitcoin (BTC)</span>
+        <div class="address-bar" onclick="copyToClipboard('YOUR_BTC_ADDRESS', this)">
+            <span class="addr">YOUR_BTC_ADDRESS</span>
+            <span class="copy-icon">COPY</span>
+        </div>
+    </div>
+
+    <div class="crypto-item">
+        <span class="label">Ethereum / USDT (ERC-20)</span>
+        <div class="address-bar" onclick="copyToClipboard('YOUR_ETH_ADDRESS', this)">
+            <span class="addr">YOUR_ETH_ADDRESS</span>
+            <span class="copy-icon">COPY</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    function copyToClipboard(text, element) {
+        navigator.clipboard.writeText(text).then(() => {
+            const originalText = element.querySelector('.copy-icon').innerText;
+            element.querySelector('.copy-icon').innerText = 'COPIED!';
+            setTimeout(() => {
+                element.querySelector('.copy-icon').innerText = originalText;
+            }, 2000);
+        });
+    }
+</script>
+
+</body>
+</html>
         <p>Если вам нравится то, что я делаю, вы можете отправить донат:</p>
         
         <a href="https://www.buymeacoffee.com/ВАШ_НИК" class="btn">Купить мне кофе ☕</a>
