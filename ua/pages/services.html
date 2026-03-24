@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ремонт конверсії сайту | AITE Services</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <style>
+        /* Додаткові стилі спеціально для сторінки послуг */
+        .service-section { margin-bottom: 120px; text-align: left; animation: fadeIn 1s ease-out; }
+        .price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 40px; }
+        .price-card { background: var(--card-bg); border: 1px solid var(--border-soft); padding: 40px; border-radius: 30px; transition: var(--transition-smooth); }
+        .price-card:hover { border-color: var(--accent-indigo); transform: translateY(-5px); }
+        .check-item { display: flex; gap: 12px; margin-bottom: 12px; font-size: 14px; }
+        .check-icon { color: var(--accent-emerald); font-weight: 800; }
+        .cross-icon { color: #f87171; font-weight: 800; }
+        .badge { display: inline-block; padding: 4px 12px; background: rgba(129, 140, 248, 0.1); color: var(--accent-indigo); border-radius: 100px; font-size: 10px; font-weight: 800; text-transform: uppercase; margin-bottom: 16px; }
+    </style>
+</head>
+<body>
+
+    <div class="premium-card" style="max-width: 1000px; text-align: left;">
+        
+        <nav style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 80px;">
+            <a href="../index.html" class="copy-trigger" style="text-decoration: none;">← На головну</a>
+            <div style="font-family: 'JetBrains Mono'; font-size: 11px;">
+                <span style="opacity: 0.5;">UA</span>
+            </div>
+        </nav>
+
+        <section class="service-section">
+            <h1 style="font-size: 56px; line-height: 1.1;">Сайт є, трафік іде,<br>а заявок немає?</h1>
+            <p style="font-size: 22px; color: var(--text-muted); margin: 30px 0; max-width: 700px;">
+                Знайду «вузькі місця», де ви втрачаєте клієнтів, і полагоджу їх за 3 дні. Без глобального редизайну, довгих зідзвонів та нудних брифів.
+            </p>
+            <div style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap;">
+                <a href="https://t.me/your_handle" class="btn-primary" style="margin: 0; background: var(--accent-indigo); color: white;">Перевірити сайт (15 хв безкоштовно)</a>
+                <div style="font-size: 12px; color: var(--text-muted);">
+                    ✅ 150+ перевірених сайтів<br>Працюю з юристами, клініками та B2B з 2023 року
+                </div>
+            </div>
+        </section>
+
+        <section class="service-section">
+            <span class="badge">Проблема</span>
+            <h2 style="font-size: 32px; margin-bottom: 30px;">Ви вже пробували все:</h2>
+            <div class="products-grid" style="grid-template-columns: 1fr; gap: 10px;">
+                <div class="crypto-row" style="cursor: default;">
+                    <span>💸 Збільшити бюджет на рекламу — трафік виріс, а заявок не стало більше.</span>
+                </div>
+                <div class="crypto-row" style="cursor: default;">
+                    <span>🎨 Замовити новий дизайн — сайт гарний, але продажі не злетіли.</span>
+                </div>
+                <div class="crypto-row" style="cursor: default;">
+                    <span>🐌 Вкластися в SEO — чекаєте місяцями, а результату немає.</span>
+                </div>
+            </div>
+            <p style="margin-top: 30px; color: var(--accent-indigo); font-weight: 600;">
+                Але ніхто не перевірив найголовніше: на якому саме кроці людина розвертається і йде?
+            </p>
+        </section>
+
+        <section class="service-section">
+            <span class="badge">Рішення</span>
+            <h2 style="font-size: 32px; margin-bottom: 20px;">Точковий ремонт конверсії</h2>
+            <p class="desc" style="margin-bottom: 40px;">Я проходжу весь шлях вашого клієнта і прибираю кожну деталь, яка змушує його закрити вкладку.</p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+                <div>
+                    <h4 style="margin-bottom: 20px; font-size: 14px; text-transform: uppercase; color: #f87171;">❌ Що я НЕ роблю:</h4>
+                    <div class="check-item"><span class="cross-icon">×</span> Не малюю дизайн з нуля</div>
+                    <div class="check-item"><span class="cross-icon">×</span> Не лізу в рекламу чи SEO</div>
+                    <div class="check-item"><span class="cross-icon">×</span> Не мучаю довгими брифами</div>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 20px; font-size: 14px; text-transform: uppercase; color: var(--accent-emerald);">✅ Що я РОБЛЮ:</h4>
+                    <div class="check-item"><span class="check-icon">✓</span> Знаходжу технічні та логічні помилки</div>
+                    <div class="check-item"><span class="check-icon">✓</span> Виправляю їх швидко і точково</div>
+                    <div class="check-item"><span class="check-icon">✓</span> Гарантую доставку заявок у CRM</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-section">
+            <span class="badge">Пакети послуг</span>
+            <div class="price-grid">
+                <div class="price-card">
+                    <div style="font-size: 20px; font-weight: 800; margin-bottom: 10px;">Експрес</div>
+                    <div style="color: var(--accent-indigo); font-size: 24px; font-weight: 800; margin-bottom: 20px;">4 000 грн</div>
+                    <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">Тільки діагноз. Відеорозбір та покроковий план виправлень.</p>
+                    <div class="check-item"><span class="check-icon">✓</span> 1 ключова сторінка</div>
+                    <div class="check-item"><span class="check-icon">✓</span> Термін: 1–2 дні</div>
+                </div>
+                <div class="price-card" style="border-color: var(--accent-indigo); background: rgba(129, 140, 248, 0.03);">
+                    <div class="badge" style="background: var(--accent-indigo); color: white;">Найчастіший вибір</div>
+                    <div style="font-size: 20px; font-weight: 800; margin-bottom: 10px;">Стандарт</div>
+                    <div style="color: var(--accent-indigo); font-size: 24px; font-weight: 800; margin-bottom: 20px;">8 000 грн</div>
+                    <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">Знайшов і полагодив. Я сам впроваджую всі правки на сайті.</p>
+                    <div class="check-item"><span class="check-icon">✓</span> Діагностика + Впровадження</div>
+                    <div class="check-item"><span class="check-icon">✓</span> Тестування форм</div>
+                    <div class="check-item"><span class="check-icon">✓</span> Термін: 3–5 днів</div>
+                </div>
+                <div class="price-card">
+                    <div style="font-size: 20px; font-weight: 800; margin-bottom: 10px;">Преміум</div>
+                    <div style="color: var(--accent-indigo); font-size: 24px; font-weight: 800; margin-bottom: 20px;">12 000 грн</div>
+                    <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">Весь сайт + Контроль. Аудит воронки та 14 днів моніторингу.</p>
+                    <div class="check-item"><span class="check-icon">✓</span> Повне впровадження</div>
+                    <div class="check-item"><span class="check-icon">✓</span> Докрутка конверсії</div>
+                    <div class="check-item"><span class="check-icon">✓</span> Термін: 7–10 днів</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-section" style="border-top: 1px solid var(--border-soft); padding-top: 60px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px;">
+                <div>
+                    <h3 style="margin-bottom: 30px;">Як ми почнемо:</h3>
+                    <p style="font-size: 14px; margin-bottom: 20px;"><strong>1. Посилання:</strong> Описуєте проблему, я дивлюся сайт 15 хв безкоштовно.</p>
+                    <p style="font-size: 14px; margin-bottom: 20px;"><strong>2. Діагноз:</strong> Якщо проблема в сайті — пропоную тариф. Якщо ні — скажу як є.</p>
+                    <p style="font-size: 14px; margin-bottom: 20px;"><strong>3. Результат:</strong> Працюємо за передоплатою. Отримуєте звіт та виправлений сайт.</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 20px;">
+                    <h3 style="margin-bottom: 20px;">Чесні гарантії:</h3>
+                    <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 15px;">🛡️ <strong>На 100%:</strong> Точна діагностика, виправлення «дірок» та робочі форми. Сайт перестане губити людей.</p>
+                    <p style="font-size: 13px; color: var(--text-muted);">⚠️ <strong>Не гарантую:</strong> Космічного зростання, якщо у вас нецільовий трафік або поганий відділ продажу.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer style="margin-top: 60px; opacity: 0.3; font-size: 10px;">
+            AITE SYSTEM • 2026
+        </footer>
+    </div>
+
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>

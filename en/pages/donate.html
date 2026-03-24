@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codebdbd | Aite Systems Support</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #050505;
+            --card-bg: rgba(23, 23, 23, 0.7);
+            --accent: #ffffff;
+            --accent-glow: rgba(99, 102, 241, 0.15);
+            --text: #ffffff;
+            --text-muted: #94a3b8;
+            --border: rgba(255, 255, 255, 0.08);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg);
+            background-image: 
+                radial-gradient(circle at 0% 0%, var(--accent-glow) 0%, transparent 50%),
+                radial-gradient(circle at 100% 100%, var(--accent-glow) 0%, transparent 50%);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .premium-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            width: 100%;
+            max-width: 520px;
+            padding: 60px 45px;
+            border-radius: 40px;
+            border: 1px solid var(--border);
+            box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            animation: fadeIn 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .brand-header {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.5em;
+            text-transform: uppercase;
+            margin-bottom: 45px;
+            color: var(--text-muted);
+            opacity: 0.6;
+        }
+
+        h1 {
+            font-size: 38px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            letter-spacing: -0.05em;
+            background: linear-gradient(180deg, #fff 30%, #64748b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .slogan {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            color: #818cf8;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .content-box {
+            text-align: left;
+            margin-bottom: 45px;
+        }
+
+        .desc-en, .desc-ru {
+            font-size: 15px;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        .desc-en { color: #e2e8f0; margin-bottom: 20px; }
+        .desc-ru { color: var(--text-muted); font-style: italic; border-left: 2px solid #312e81; padding-left: 20px; }
+
+        .crypto-list { display: flex; flex-direction: column; gap: 14px; }
+
+        .crypto-row {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            padding: 18px 24px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .crypto-row:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .coin-info { text-align: left; }
+        .coin-name { font-size: 15px; font-weight: 700; display: block; }
+        .network-tag { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; }
+
+        .copy-trigger {
+            font-size: 11px;
+            font-weight: 800;
+            color: #818cf8;
+            text-transform: uppercase;
+        }
+
+        .active .copy-trigger { color: #34d399; }
+
+        footer {
+            margin-top: 50px;
+            font-size: 10px;
+            color: rgba(255,255,255,0.15);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+<div class="premium-card">
+    <div class="brand-header">Codebdbd | Architect</div>
+    
+    <h1>Attention into Efficiency</h1>
+    <div class="slogan">Aite: Tools for Iterative Optimization</div>
+
+    <div class="content-box">
+        <div class="desc-en">
+            Turning chaos into manageable systems. I build "bricks" for small businesses—simple, reliable utilities that automate routine and reduce cognitive load. Support the evolution of Aite tools.
+        </div>
+        <div class="desc-ru">
+            Превращаю хаос задач в управляемые системы. Создаю инструменты для малого бизнеса — надежные утилиты, которые убирают рутину и освобождают внимание. Поддержите развитие экосистемы Aite.
+        </div>
+    </div>
+
+    <div class="crypto-list">
+        <div class="crypto-row" onclick="copy('TDSQiA4jDhsfRvQyjMSGc2cB2ay2gVVvz7', this)">
+            <div class="coin-info">
+                <span class="coin-name">USDT</span>
+                <span class="network-tag">Network: TRC-20</span>
+            </div>
+            <div class="copy-trigger">Copy Address</div>
+        </div>
+
+        <div class="crypto-row" onclick="copy('ВАШ_АДРЕС_TON', this)">
+            <div class="coin-info">
+                <span class="coin-name">Toncoin</span>
+                <span class="network-tag">Network: TON</span>
+            </div>
+            <div class="copy-trigger">Copy Address</div>
+        </div>
+
+        <div class="crypto-row" onclick="copy('ВАШ_АДРЕС_SOLANA', this)">
+            <div class="coin-info">
+                <span class="coin-name">Solana</span>
+                <span class="network-tag">Network: SOL</span>
+            </div>
+            <div class="copy-trigger">Copy Address</div>
+        </div>
+    </div>
+
+    <footer>Minimal Noise • Maximum Structure</footer>
+</div>
+
+<script>
+    function copy(text, el) {
+        navigator.clipboard.writeText(text).then(() => {
+            el.classList.add('active');
+            const label = el.querySelector('.copy-trigger');
+            const original = label.innerText;
+            label.innerText = 'Copied';
+            setTimeout(() => {
+                label.innerText = original;
+                el.classList.remove('active');
+            }, 2000);
+        });
+    }
+</script>
+
+</body>
+</html>
