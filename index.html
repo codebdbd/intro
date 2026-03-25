@@ -7,13 +7,8 @@
     <style>body { background: #050505; }</style>
     <script>
         (function() {
-            // Список поддерживаемых языков
-            const supported = ['en', 'ru', 'ua'];
-            // Получаем основной язык браузера (например, "ru-RU" -> "ru")
-            const userLang = (navigator.language || navigator.userLanguage).split('-')[0];
-            
-            // Определяем целевую папку: если язык не поддерживается, шлем в /en/
-            const target = supported.includes(userLang) ? userLang : 'en';
+            // Всегда загружаем английскую версию по умолчанию
+            const target = 'en';
             
             // Мгновенный редирект без записи в историю (replace), чтобы кнопка "Назад" не вела в редирект
             window.location.replace('/' + target + '/');
